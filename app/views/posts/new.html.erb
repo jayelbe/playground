@@ -1,0 +1,17 @@
+<h1>new html erb</h1>
+
+<%= form_for :post, url: posts_path do |thing| %>
+	<p>
+		<%= thing.label :title %><br />
+		<%= thing.text_field :title%>
+	</p>
+
+	<p>
+		<%= thing.label :body%><br />
+		<%= thing.text_area :body%>
+	</p>
+
+	<p>
+		<%= thing.submit %>
+	</p>
+<% end %>
